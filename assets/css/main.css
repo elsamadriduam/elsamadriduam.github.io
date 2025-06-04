@@ -3954,3 +3954,37 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tarjeta {
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 220px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjeta:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+}
+
+.tarjeta img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #e0e0e0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
