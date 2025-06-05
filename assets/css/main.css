@@ -3963,8 +3963,8 @@ input, select, textarea {
 }
 
 .tarjeta {
-  background: #c1c2d6;
-  border-radius: 0.5;
+  background: #f3f5f9;
+  border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   width: 240px;
   padding: 0.5rem;
@@ -3980,15 +3980,15 @@ input, select, textarea {
 }
 
 .tarjeta img {
-  width: 200px;
+  width: 220px;
   height: 240px;
   object-fit: cover;
-  border-radius: 0.5px;
+  border-radius: 2px;
   margin-bottom: 0.5rem;
   background: transparent;
   box-shadow: 0 1px 6px rgba(0,0,0,0.08);
 }
 
 .grid > .tarjeta:nth-child(4) {
-  grid-column-start: 2;
+  grid-column-start: 2 / 3;
 }
