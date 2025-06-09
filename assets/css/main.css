@@ -3955,40 +3955,34 @@ input, select, textarea {
 			visibility: visible;
 		}
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	justify-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .tarjeta {
-  background: #f3f5f9;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  width: 240px;
-  padding: 0.5rem;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  width: auto;
   text-align: center;
-  transition: box-shadow 0.2s;
+  transition: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.tarjeta:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+  margin: 0 10px;
 }
 
 .tarjeta img {
-  width: 220px;
-  height: 230px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 2px;
   margin-bottom: 0.5rem;
   background: transparent;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-}
+  box-shadow: none;
 
-.grid > .tarjeta:nth-child(4) {
-  grid-column-start: 2 / 3;
 }
