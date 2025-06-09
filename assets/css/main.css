@@ -3966,12 +3966,11 @@ input, select, textarea {
 
 .tarjeta {
   background: none;
-  border-radius: 0;
+  border: none;
   box-shadow: none;
   padding: 0;
   width: auto;
   text-align: center;
-  transition: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3995,14 +3994,14 @@ input, select, textarea {
   margin-bottom: 0.5em;
 }
 
-/* Posiciona las tarjetas en el grid tipo pirámide */
+/* Posiciones tipo pirámide */
 .t1 { grid-column: 1; grid-row: 1; }
 .t2 { grid-column: 3; grid-row: 1; }
 .t3 { grid-column: 5; grid-row: 1; }
 .t4 { grid-column: 2; grid-row: 2; }
 .t5 { grid-column: 4; grid-row: 2; }
 
-/* Responsive: se apilan en columna en móvil */
+/* Responsive para móvil */
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
