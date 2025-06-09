@@ -3995,16 +3995,22 @@ input, select, textarea {
   font-size: 0.99rem;
 }
 
-/* Responsive: stack the info below the photo on móviles */
 @media (max-width: 600px) {
   .directiva-miembro {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 0.8rem;
   }
   .directiva-miembro img {
     width: 100%;
     max-width: 250px;
     height: auto;
+  }
+  .directiva-info {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 }
