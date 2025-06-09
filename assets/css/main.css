@@ -3959,7 +3959,8 @@ input, select, textarea {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 2rem;
+  column-gap: 0.5rem; /* Menos espacio horizontal */
+  row-gap: 2rem;      /* Mantiene el espacio vertical */
   justify-items: center;
   justify-content: center;
 }
