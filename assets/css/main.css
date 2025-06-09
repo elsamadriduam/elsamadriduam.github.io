@@ -3954,12 +3954,14 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
 .grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, auto);   /* 2 filas */
   gap: 2rem;
+  justify-items: center; /* Centra horizontalmente las tarjetas */
+  justify-content: center; /* Centra el grid dentro del contenedor padre */
 }
 
 .tarjeta {
@@ -3973,16 +3975,37 @@ input, select, textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px;
+  margin: 0;
 }
 
 .tarjeta img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 240px;
   object-fit: cover;
   border-radius: 2px;
   margin-bottom: 0.5rem;
   background: transparent;
   box-shadow: none;
+}
 
+/* Haz que la tarjeta 4 y 5 empiecen en la segunda fila, centradas */
+.grid > .tarjeta:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.grid > .tarjeta:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Responsive: en móvil se apilan en una columna */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+  .grid > .tarjeta {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
 }
