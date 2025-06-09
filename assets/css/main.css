@@ -3957,11 +3957,11 @@ input, select, textarea {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: repeat(2, auto);   /* 2 filas */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 2rem;
-  justify-items: center; /* Centra horizontalmente las tarjetas */
-  justify-content: center; /* Centra el grid dentro del contenedor padre */
+  justify-items: center;
+  justify-content: center;
 }
 
 .tarjeta {
@@ -3988,24 +3988,26 @@ input, select, textarea {
   box-shadow: none;
 }
 
-/* Haz que la tarjeta 4 y 5 empiecen en la segunda fila, centradas */
-.grid > .tarjeta:nth-child(4) {
-  grid-column: 2;
-  grid-row: 2;
+.cargo {
+  font-weight: bold;
+  color: #0099cc;
+  display: block;
+  margin-bottom: 0.5em;
 }
-.grid > .tarjeta:nth-child(5) {
-  grid-column: 3;
-  grid-row: 2;
+
+.tarjeta.placeholder {
+  visibility: hidden;
 }
 
 /* Responsive: en móvil se apilan en una columna */
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
   }
   .grid > .tarjeta {
     grid-column: 1 !important;
     grid-row: auto !important;
   }
 }
+
