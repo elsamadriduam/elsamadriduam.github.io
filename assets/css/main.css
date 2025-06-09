@@ -3994,6 +3994,17 @@ input, select, textarea {
   margin-bottom: 0.5em;
 }
 
+.correo {
+  font-size: 0.98em;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+
 /* Posiciones tipo pirámide */
 .t1 { grid-column: 1; grid-row: 1; }
 .t2 { grid-column: 3; grid-row: 1; }
