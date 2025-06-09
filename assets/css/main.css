@@ -3959,11 +3959,10 @@ input, select, textarea {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 0.5rem;
+  column-gap: 0rem;
+  row-gap: 2rem;
   justify-items: center;
   justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .tarjeta {
