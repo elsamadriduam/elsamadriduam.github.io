@@ -3118,10 +3118,10 @@ input, select, textarea {
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
-		height: 3.25em;
+		height: 80px;
 		left: 0;
 		letter-spacing: 0.25em;
-		line-height: 3.25em;
+		line-height: 80px;
 		margin: 0;
 		position: fixed;
 		text-transform: uppercase;
