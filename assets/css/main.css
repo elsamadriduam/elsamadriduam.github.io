@@ -3644,8 +3644,7 @@ input, select, textarea {
   height: 180px;
   background-size: cover;
   background-position: center;
-  border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border-radius: 0px;
   display: flex;
   align-items: flex-end;
   justify-content: left;
@@ -3660,11 +3659,10 @@ input, select, textarea {
   color: #fff;
   padding: 16px 18px 12px 18px;
   font-size: 1.2em;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   width: 100%;
   font-weight: bold;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
   box-sizing: border-box;
 }
 
