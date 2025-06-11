@@ -3312,14 +3312,15 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-			#header {
-				height: 50em;
-				line-height: 50em;
+			    #header {
+			        height: 2.75em;
+			        line-height: 2.75em;
+			    }
+			    #header .logo {
+			        height: 44px;
+			        padding: 0 1em;
+			    }
 			}
-				#header .logo {
-					height: 44px;
-					padding: 0 1em;
-				}
 
 				#header nav a {
 					padding: 0 0.5em;
