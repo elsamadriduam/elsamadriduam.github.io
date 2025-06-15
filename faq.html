@@ -52,33 +52,24 @@
 									</header>
 
 												<!-- Image -->
-													<h3>Image</h3>
-													<div class="box alt">
-														<div class="row gtr-50 gtr-uniform">
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria00.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria01.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria02.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria03.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria04.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria05.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria06.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria07.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria08.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria09.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria10.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria11.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria12.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria13.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria14.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria15.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/picgaleria16.jpg" alt="" /></span></div>
-														</div>
-													</div>
+
+												<div class="galeria-mosaico">
+														<img src="images/picgaleria00.jpg" alt="">
+														<img src="images/picgaleria01.jpg" alt="">
+													  	<img src="images/picgaleria02.jpg" alt="">
+														<img src="images/picgaleria03.jpg" alt="">
+													  	<img src="images/picgaleria04.jpg" alt="">
+													  	<img src="images/picgaleria05.jpg" alt="">
+														<img src="images/picgaleria06.jpg" alt="">
+														<img src="images/picgaleria07.jpg" alt="">
+													  	<img src="images/picgaleria08.jpg" alt="">
+														<img src="images/picgaleria09.jpg" alt="">
+													  	<img src="images/picgaleria10.jpg" alt="">
+													  	<img src="images/picgaleria11.jpg" alt="">
+														<img src="images/picgaleria12.jpg" alt="">
+													  	<img src="images/picgaleria13.jpg" alt="">
+														<img src="images/picgaleria14.jpg" alt="">
+												</div>
 											
 											</div>
 										</div>
@@ -160,5 +151,20 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<script>
+document.querySelectorAll('.galeria-mosaico img').forEach(img => {
+  img.onload = function() {
+    if (img.naturalWidth > img.naturalHeight) {
+      img.classList.add('horizontal');
+    } else if (img.naturalHeight > img.naturalWidth) {
+      img.classList.add('vertical');
+    }
+    // Si quieres tratar los cuadrados distinto, puedes poner otro else
+  };
+  // Por si ya están cargadas antes de este script:
+  if (img.complete) img.onload();
+});
+</script>
+		
 	</body>
 </html>
