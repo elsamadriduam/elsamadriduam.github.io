@@ -4065,3 +4065,31 @@ input, select, textarea {
     flex-direction: column;
   }
 }
+
+
+
+<style>
+.galeria-mosaico {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+.galeria-mosaico img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0002;
+  transition: transform 0.2s;
+}
+.galeria-mosaico img.horizontal {
+  grid-column: span 2;
+}
+.galeria-mosaico img.vertical {
+  grid-row: span 2;
+}
+</style>
+
+
+
