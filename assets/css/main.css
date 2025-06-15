@@ -4066,3 +4066,15 @@ input, select, textarea {
   }
 }
 
+
+.gallery-masonry {
+  column-count: 3;
+  column-gap: 10px;
+}
+.gallery-masonry img {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 6px;
+}
+
