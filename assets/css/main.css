@@ -2839,19 +2839,19 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #3a77ea;
-			}
-
-			.tiles article:nth-child(6n - 2):before {
 				background-color: #8ea9e8;
 			}
 
+			.tiles article:nth-child(6n - 2):before {
+				background-color: #6fc3df;
+			}
+
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #ffe082;
+				background-color: #8d82c4;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #f2b5e0;
+				background-color: #8ea9e8;
 			}
 
 		@media screen and (max-width: 1280px) {
